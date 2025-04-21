@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Default light theme colors */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f9fa;
+  --text-primary: #1a1a1a;
+  --text-secondary: #6c757d;
+  --border-color: #dee2e6;
+  --accent-color: #e50914;
+  --primary-color: #0d253f;
+  --secondary-color: #01b4e4;
+  --card-bg: #ffffff;
+  --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@layer base {
+  body {
+    @apply min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-lg font-medium transition-all duration-300;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-white hover:bg-opacity-90;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-white hover:bg-opacity-90;
+  }
+
+  .btn-accent {
+    @apply bg-accent text-white hover:bg-opacity-90;
+  }
+}

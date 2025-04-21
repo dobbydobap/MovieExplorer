@@ -1,0 +1,76 @@
+.home-page {
+  padding-top: 0;
+}
+
+.home-content {
+  padding: 2rem 0;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.section-link {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--primary-color);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+.section-link:hover {
+  color: var(--secondary-color);
+}
+
+/* Additional styles for specific sections */
+.section-categories {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding: 0.5rem 0;
+  margin-bottom: 2rem;
+  scrollbar-width: thin;
+}
+
+.section-categories::-webkit-scrollbar {
+  height: 4px;
+}
+
+.section-categories::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+.section-categories::-webkit-scrollbar-thumb {
+  background-color: var(--text-secondary);
+  border-radius: 20px;
+}
+
+.category-chip {
+  padding: 0.5rem 1rem;
+  background-color: var(--bg-secondary);
+  border-radius: 50px;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.category-chip:hover,
+.category-chip.active {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .home-content {
+    padding-top: 1rem;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+  }
+}
